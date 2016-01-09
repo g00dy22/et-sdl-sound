@@ -1,0 +1,69 @@
+r29:
+Fix undefined PATH_MAX with GCC 4.3.
+
+r28:
+Rename functions in launcher script for better compability.
+
+r27:
+Redirect locate stderr into /dev/null instead of using -q.
+
+r26:
+Fail gracefully when SDL_AudioDriverName() gives NULL and introduce
+sdlsamplesmult cvar.
+
+r25:
+Fixed possible readlink() problem.
+
+r24:
+Removed sdldevsamps and sdlmixsamps cvars. 
+
+r23:
+Quake3 1.31, 1.32, 1.32b & 1.32c support and separate launcher script for
+every supported game (et-, wolf-, wolfsp- and quake3-sdl-sound).
+
+r22:
+RTCW 1.41 Multiplayer (wolf.x86) support.
+
+r21:
+Use "find" to locate Enemy Territory or libSDL.so if other methods fail.
+
+r20:
+Another compability fix in the launcher script.
+
+r19:
+Compability fix: "base64" is not needed any more.
+
+r18:
+New self-containing launcher script! No more complex scripts or environment
+variables, just ./et-sdl-sound and go!
+
+r17:
+More cleanups, some additional checks and information at startup.
+
+r16:
+Just some cleanups, f.ex. no more detourFunction() and minor Makefile
+compability fix.
+
+r15:
+SDL library is now loaded run-time using dlopen() making the static version
+obsolete.
+
+r14:
+Some code cleanup and stub direct ALSA support.
+
+r13:
+SNDDMA_Submit(), SNDDMA_BeginPainting() and SNDDMA_Shutdown() support for
+ET 2.56.
+
+r12:
+Partial support for ET 2.56.
+
+r11:
+Fixed SNDDMA_Submit() and SNDMA_BeginPainting() for ET 2.55.
+
+r10:
+The version is now determined by calculating CRC32 of /proc/self/exe. Fixes
+segfault when loading library to any other application than ET or RTCW.
+
+r9:
+Added unified support for ET 2.60 and ET 2.55.
