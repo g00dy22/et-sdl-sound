@@ -24,6 +24,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #include <cstdlib>
 #include <limits.h>
 
+// avoid readlink function error
+#include <stdlib.h>
+#include <unistd.h>
+
 #ifdef __SDL
 #include <SDL/SDL.h>
 #include "etsdl.hpp"
